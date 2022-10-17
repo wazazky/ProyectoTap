@@ -30,29 +30,38 @@ namespace ProyectoTAP
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.PantallaDeJuego = new System.Windows.Forms.GroupBox();
+            this.Pantalla_de_Juego = new System.Windows.Forms.GroupBox();
             this.Player = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Contador = new System.Windows.Forms.Timer(this.components);
             this.PantallaDeJuego.SuspendLayout();
+            this.Pantalla_de_Juego.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PantallaDeJuego
             // 
             resources.ApplyResources(this.PantallaDeJuego, "PantallaDeJuego");
             this.PantallaDeJuego.BackColor = System.Drawing.Color.Transparent;
-            this.PantallaDeJuego.Controls.Add(this.groupBox1);
+            this.PantallaDeJuego.Controls.Add(this.Pantalla_de_Juego);
             this.PantallaDeJuego.Controls.Add(this.button2);
             this.PantallaDeJuego.Controls.Add(this.button3);
             this.PantallaDeJuego.Controls.Add(this.button1);
             this.PantallaDeJuego.Name = "PantallaDeJuego";
             this.PantallaDeJuego.TabStop = false;
+            // 
+            // Pantalla_de_Juego
+            // 
+            resources.ApplyResources(this.Pantalla_de_Juego, "Pantalla_de_Juego");
+            this.Pantalla_de_Juego.Controls.Add(this.Player);
+            this.Pantalla_de_Juego.Name = "Pantalla_de_Juego";
+            this.Pantalla_de_Juego.TabStop = false;
             // 
             // Player
             // 
@@ -81,13 +90,10 @@ namespace ProyectoTAP
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // groupBox1
+            // Contador
             // 
-        
-            this.groupBox1.Controls.Add(this.Player);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
+            this.Contador.Enabled = true;
+            this.Contador.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -99,8 +105,8 @@ namespace ProyectoTAP
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.PantallaDeJuego.ResumeLayout(false);
+            this.Pantalla_de_Juego.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
-            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -113,7 +119,8 @@ namespace ProyectoTAP
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox Player;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox Pantalla_de_Juego;
+        private System.Windows.Forms.Timer Contador;
     }
 }
 

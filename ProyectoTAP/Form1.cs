@@ -26,12 +26,22 @@ namespace ProyectoTAP
             Console.WriteLine("Linea en public form1load ");
         }
 
+      
+
         private void button1_Click(object sender, EventArgs e)
         {
-            Player.Load(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\Personajes\\image2.gif");
+            Player.Load(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\Personajes\\image 2.gif");
+            Contador.Start();
+          
+          
         }
 
         private void Player_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
 
         }
