@@ -30,73 +30,90 @@ namespace ProyectoTAP
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.PictureBox pictureBox2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(pictureBox2)).BeginInit();
+            this.PantallaDeJuego = new System.Windows.Forms.GroupBox();
+            this.Player = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.PantallaDeJuego.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox2
+            // PantallaDeJuego
             // 
-            pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            pictureBox2.Location = new System.Drawing.Point(531, 268);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new System.Drawing.Size(31, 50);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            pictureBox2.Image.RotateFlip(RotateFlipType.RotateNoneFlipX);
+            resources.ApplyResources(this.PantallaDeJuego, "PantallaDeJuego");
+            this.PantallaDeJuego.BackColor = System.Drawing.Color.Transparent;
+            this.PantallaDeJuego.Controls.Add(this.groupBox1);
+            this.PantallaDeJuego.Controls.Add(this.button2);
+            this.PantallaDeJuego.Controls.Add(this.button3);
+            this.PantallaDeJuego.Controls.Add(this.button1);
+            this.PantallaDeJuego.Name = "PantallaDeJuego";
+            this.PantallaDeJuego.TabStop = false;
+            // 
+            // Player
+            // 
+            resources.ApplyResources(this.Player, "Player");
+            this.Player.BackColor = System.Drawing.Color.Transparent;
+            this.Player.Name = "Player";
+            this.Player.TabStop = false;
+            this.Player.Click += new System.EventHandler(this.Player_Click);
+            // 
+            // button2
+            // 
+            resources.ApplyResources(this.button2, "button2");
+            this.button2.Name = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            resources.ApplyResources(this.button3, "button3");
+            this.button3.Name = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
-            this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.groupBox1.Controls.Add(pictureBox2);
-            this.groupBox1.Controls.Add(this.pictureBox1); 
-            this.groupBox1.Location = new System.Drawing.Point(-3, 1);
+        
+            this.groupBox1.Controls.Add(this.Player);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(786, 335);
-            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(120, 268);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 361);
-            this.Controls.Add(this.groupBox1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Controls.Add(this.PantallaDeJuego);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
-            this.Text = "DontDie";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(pictureBox2)).EndInit();
+            this.PantallaDeJuego.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox PantallaDeJuego;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox Player;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

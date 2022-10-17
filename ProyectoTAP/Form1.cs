@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace ProyectoTAP
 {
@@ -14,11 +16,22 @@ namespace ProyectoTAP
     {
         public Form1()
         {
-            InitializeComponent(); 
-            
+            InitializeComponent();
+            Console.WriteLine("Linea en public form1");
+           // pictureBox1.Image = 
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+            Console.WriteLine("Linea en public form1load ");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Player.Load(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\Personajes\\image2.gif");
+        }
+
+        private void Player_Click(object sender, EventArgs e)
         {
 
         }

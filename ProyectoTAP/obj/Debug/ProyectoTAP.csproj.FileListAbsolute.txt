@@ -9,3 +9,9 @@ D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\obj\Debug
 D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.csproj.CoreCompileInputs.cache
 D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.exe
 D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.pdb
+D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\bin\Debug\zu-ZA\ProyectoTAP.resources.dll
+D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\bin\Debug\zu\ProyectoTAP.resources.dll
+D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.Form1.zu-ZA.resources
+D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.Form1.zu.resources
+D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\obj\Debug\zu-ZA\ProyectoTAP.resources.dll
+D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\obj\Debug\zu\ProyectoTAP.resources.dll

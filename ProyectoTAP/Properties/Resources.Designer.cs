@@ -59,14 +59,5 @@ namespace ProyectoTAP.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string Test1 {
-            get {
-                return ResourceManager.GetString("Test1", resourceCulture);
-            }
-        }
     }
 }
