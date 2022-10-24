@@ -53,10 +53,35 @@ public class Personaje
     }
     public void Ataque(Personaje Atacante, Personaje Defensor, int damage)
     {
-        float daño = (Atacante.Fuerza)*(damage);
-        Defensor.Vida = Defensor.Vida - daño;
-
-
+        float daño = (Atacante.Fuerza) * (damage);
+        if (Defensor.escudo > 0)
+        {
+            Defensor.escudo = Defensor.escudo - daño;
+            if (Defensor.escudo < 00)
+            {
+                Defensor.vida = Defensor.vida - Defensor.escudo;
+            }
+        }
+        else {
+            Defensor.Vida = Defensor.Vida - daño;
+        }
 
     }
+    public void Curar(Personaje Defensor, int cura) {
+        Defensor.vida = Defensor.vida + cura * (Defensor.Inteligencia);
+    }
+    public void eleccion(Personaje Atacante, Personaje Defensor) {
+
+        Random rnd = new Random();
+        int eleccion = rnd.Next(2);
+        if (eleccion == 1)
+        {
+            Curar(Defensor , rnd.Next(5));
+
+        }
+        else {
+            Ataque(Defensor,Atacante, rnd.Next(5));
+        }
+                
+        }
 }

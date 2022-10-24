@@ -33,7 +33,7 @@ namespace ProyectoTAP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //Player.Load(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\Personajes\\image 2.gif");
+            Player.Load(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\Personajes\\image 2.gif");
           //  Contador.Start();
           
           
@@ -51,7 +51,8 @@ namespace ProyectoTAP
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Player.Load(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\Personajes\\image.gif");
+            pictureBox1.Load(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\Personajes\\image2.gif");
         }
 
         private void button3_Click(object sender, EventArgs e)
