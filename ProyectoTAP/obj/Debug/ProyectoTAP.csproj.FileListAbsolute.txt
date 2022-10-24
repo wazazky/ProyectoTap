@@ -15,3 +15,20 @@ D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\obj\Debug
 D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\obj\Debug\ProyectoTAP.Form1.zu.resources
 D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\obj\Debug\zu-ZA\ProyectoTAP.resources.dll
 D:\Workspace\Topicos Avanzados De programacion\ProyectoTAP\ProyectoTAP\obj\Debug\zu\ProyectoTAP.resources.dll
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\bin\Debug\ProyectoTAP.exe.config
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\bin\Debug\ProyectoTAP.exe
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\bin\Debug\ProyectoTAP.pdb
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\bin\Debug\zu-ZA\ProyectoTAP.resources.dll
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\bin\Debug\zu\ProyectoTAP.resources.dll
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.csproj.AssemblyReference.cache
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.csproj.SuggestedBindingRedirects.cache
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Form1.resources
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Properties.Resources.resources
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Form1.zu-ZA.resources
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Form1.zu.resources
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.csproj.GenerateResource.cache
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.csproj.CoreCompileInputs.cache
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\zu-ZA\ProyectoTAP.resources.dll
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\zu\ProyectoTAP.resources.dll
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.exe
+C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.pdb

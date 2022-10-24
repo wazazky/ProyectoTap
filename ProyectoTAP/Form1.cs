@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
+
 namespace ProyectoTAP
 {
     public partial class Form1 : Form
@@ -18,6 +19,8 @@ namespace ProyectoTAP
         {
             InitializeComponent();
             Console.WriteLine("Linea en public form1");
+            Personaje p1 = new Personaje(1);
+            Personaje p2 = new Personaje(2);
            // pictureBox1.Image = 
         }
 
@@ -30,8 +33,8 @@ namespace ProyectoTAP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Player.Load(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\Personajes\\image 2.gif");
-            Contador.Start();
+            //Player.Load(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\Personajes\\image 2.gif");
+          //  Contador.Start();
           
           
         }
@@ -42,6 +45,16 @@ namespace ProyectoTAP
         }
 
         private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }
