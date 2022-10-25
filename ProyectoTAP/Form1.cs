@@ -15,15 +15,19 @@ namespace ProyectoTAP
 {
     public partial class Form1 : Form
     {
+        Personaje p1;
+        Personaje p2;
         public Form1()
         {
             InitializeComponent();
             Console.WriteLine("Linea en public form1");
-            Personaje p1 = new Personaje(1);
-            Personaje p2 = new Personaje(2);
+            crearpj();
            // pictureBox1.Image = 
         }
-
+        public void crearpj() {
+            Personaje p1 = new Personaje(1);
+            Personaje p2 = new Personaje(2);
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             Console.WriteLine("Linea en public form1load ");
@@ -34,8 +38,9 @@ namespace ProyectoTAP
         private void button1_Click(object sender, EventArgs e)
         {
             Player.Load(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\Personajes\\image 2.gif");
-          //  Contador.Start();
-          
+            //  Contador.Start();
+            //Personaje.Ataque(p1, p2,5);
+          //  Personaje.mostrar(p1,p2);
           
         }
 

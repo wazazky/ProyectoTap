@@ -131,7 +131,7 @@
   <data name="Pantalla_de_Juego.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA/4AAAFSCAIAAADEv5MmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAA/7JJREFUeF7s/c+Lb9+a34c1WKCRhCbqbgmJlnWF2pFohdstUNvdNmoQXMXNVV87
+        vwAADr8BOAVTJAAA/7JJREFUeF7s/c+Lb9+a34c1WKCRhCbqbgmJlnWF2pFohdstUNvdNmoQXMXNVV87
         YLcVPBCiRQYCKZgQYW6DTIa2B7ETCCIDh0BGAQ9CICGDEEd/gGcZJGTmaf6CwM37U6+q13mfZ+29a9en
         PlWn6ns+8GL1s55f61lrr9r7OdXne+4v/R/+l//8E/H//f/817/4//3L5v/5f/8X8C//j//bRn2IWwIh
         U4RO8iIOwllu1Px2jP1aFRXuFRmuK7KXE7Y88p9ks0KLJ7Ow3CjpOkbZrhgs4wA8LexF3HAXt4XCNhlb
@@ -3306,7 +3306,7 @@
     <value>NoControl</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>89, 661</value>
+    <value>113, 501</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 83</value>
@@ -3363,7 +3363,7 @@
     <value>NoControl</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 661</value>
+    <value>202, 501</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 83</value>
@@ -3422,7 +3422,7 @@
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 661</value>
+    <value>20, 498</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 83</value>

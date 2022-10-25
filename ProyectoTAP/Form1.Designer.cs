@@ -35,16 +35,16 @@ namespace ProyectoTAP
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.PantallaDeJuego = new System.Windows.Forms.GroupBox();
             this.Pantalla_de_Juego = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Player = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.Contador = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PantallaDeJuego.SuspendLayout();
             this.Pantalla_de_Juego.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).BeginInit();
             this.SuspendLayout();
             // 
             // PantallaDeJuego
@@ -65,6 +65,13 @@ namespace ProyectoTAP
             this.Pantalla_de_Juego.Controls.Add(this.Player);
             this.Pantalla_de_Juego.Name = "Pantalla_de_Juego";
             this.Pantalla_de_Juego.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // Player
             // 
@@ -100,13 +107,6 @@ namespace ProyectoTAP
             this.Contador.Enabled = true;
             this.Contador.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -118,8 +118,8 @@ namespace ProyectoTAP
             this.Load += new System.EventHandler(this.Form1_Load);
             this.PantallaDeJuego.ResumeLayout(false);
             this.Pantalla_de_Juego.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Player)).EndInit();
             this.ResumeLayout(false);
 
         }

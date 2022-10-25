@@ -57,7 +57,7 @@ public class Personaje
         if (Defensor.escudo > 0)
         {
             Defensor.escudo = Defensor.escudo - daño;
-            if (Defensor.escudo < 00)
+            if (Defensor.escudo < 0)
             {
                 Defensor.vida = Defensor.vida - Defensor.escudo;
             }
@@ -81,7 +81,13 @@ public class Personaje
         }
         else {
             Ataque(Defensor,Atacante, rnd.Next(5));
+        }       
         }
-                
-        }
+    public void mostrar(Personaje p1,Personaje p2) {
+
+        Console.WriteLine("id de personaje " + p1.id+ "Vida de personaje "+p1.Vida);
+        Console.WriteLine("id de personaje " + p2.id+ "Vida de personaje "+p2.Vida);
+
+    
+    }
 }
