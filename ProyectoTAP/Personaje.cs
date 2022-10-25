@@ -41,7 +41,6 @@ public class Personaje
         Random rnd = new Random();
 
         this.id = id;
-
         this.Fuerza = rnd.Next(10);
         this.Persepcion = rnd.Next(10);
         this.Resistencia = rnd.Next(10);

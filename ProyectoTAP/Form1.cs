@@ -10,37 +10,42 @@ using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
-
 namespace ProyectoTAP
 {
+
     public partial class Form1 : Form
     {
         Personaje p1;
         Personaje p2;
+        Personaje Espectador;
         public Form1()
         {
             InitializeComponent();
             Console.WriteLine("Linea en public form1");
+
             crearpj();
-           // pictureBox1.Image = 
-        }
+                }
         public void crearpj() {
-            Personaje p1 = new Personaje(1);
-            Personaje p2 = new Personaje(2);
+            Espectador = new Personaje(0);
+             p1 = new Personaje(1);
+            p2 = new Personaje(2);
         }
         private void Form1_Load(object sender, EventArgs e)
         {
             Console.WriteLine("Linea en public form1load ");
         }
 
-      
 
+        public void ClickAtaque(Personaje p1, Personaje p2) {
+            Espectador.Ataque(p1, p2, 5);
+            Espectador.mostrar(p1, p2);
+
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             Player.Load(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\Personajes\\image 2.gif");
-            //  Contador.Start();
-            //Personaje.Ataque(p1, p2,5);
-          //  Personaje.mostrar(p1,p2);
+            //Contador.Start();
+            ClickAtaque(p1,p2);        
           
         }
 
@@ -65,4 +70,5 @@ namespace ProyectoTAP
 
         }
     }
+
 }
