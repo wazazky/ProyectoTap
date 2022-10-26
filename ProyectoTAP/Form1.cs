@@ -27,7 +27,7 @@ namespace ProyectoTAP
                 }
         public void crearpj() {
             Espectador = new Personaje(0);
-             p1 = new Personaje(1);
+            p1 = new Personaje(1);
             p2 = new Personaje(2);
         }
         private void Form1_Load(object sender, EventArgs e)

@@ -4,15 +4,16 @@
 
 public class Personaje
 {
-    int id;
-    int Fuerza;
-    int Persepcion;
-    int Resistencia;
-    int Carisma;
-    int Inteligencia;
-    int Suerte;
-    float vida;
-    float escudo;
+    int id;//identificador de personaje, usar el id 1 para el pricipal el 0 para el specatdor y los demas para los eneemigos 
+    int Fuerza;//modificador para el daño y el calculo d vida total 
+    int Persepcion;//modificador de punteria 
+    int Resistencia;//Modificador para la vida
+    int Carisma;// reduce el costo de los objetos 
+    int Inteligencia;//el modificador de aumenta la curacion y el escudo 
+    int Agilidad;//modificador para bajar la punteria al enemigo
+    int Suerte;//padan cosas 
+    float vida;//la vida se calcula en (resistencia*5) * (fuerza*5)
+    float escudo;//el escudo se consigue despues y su multipliador es la inteligencia 
 
     public global::System.Int32 Id { get => id; set => id = value; }
     public global::System.Int32 Fuerza1 { get => Fuerza; set => Fuerza = value; }
@@ -23,8 +24,10 @@ public class Personaje
     public global::System.Int32 Suerte1 { get => Suerte; set => Suerte = value; }
     public float Vida { get => vida; set => vida = value; }
     public float Escudo { get => escudo; set => escudo = value; }
+    public int Agilidad1 { get => Agilidad2; set => Agilidad2 = value; }
+    public int Agilidad2 { get => Agilidad; set => Agilidad = value; }
 
-    public Personaje(int id, int Fuerza, int Persepcion, int Resistencia, int Carisma, int Inteligencia, int Suerte)
+    public Personaje(int id, int Fuerza, int Persepcion, int Resistencia, int Carisma, int Inteligencia,int Agilidad, int Suerte)
     {
         this.id = id;
         this.Fuerza = Fuerza;
@@ -32,6 +35,7 @@ public class Personaje
         this.Resistencia = Resistencia;
         this.Carisma = Carisma;
         this.Inteligencia = Inteligencia;
+        this.Agilidad2 = Agilidad;
         this.Suerte = Suerte;
         this.vida = (Resistencia * 5) + (Fuerza * 5);
         this.escudo = 0;
@@ -47,6 +51,7 @@ public class Personaje
         this.Carisma = rnd.Next(10);
         this.Inteligencia = rnd.Next(10);
         this.Suerte = rnd.Next(10);
+        this.Agilidad2 = rnd.Next(10);
         this.vida = (Resistencia * 5) + (Fuerza * 5);
         this.escudo = 0;
     }
