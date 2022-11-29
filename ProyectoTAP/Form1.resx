@@ -131,7 +131,7 @@
   <data name="Pantalla_de_Juego.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA/4AAAFSCAIAAADEv5MmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAA/7JJREFUeF7s/c+Lb9+a34c1WKCRhCbqbgmJlnWF2pFohdstUNvdNmoQXMXNVV87
+        vAAADrwBlbxySQAA/7JJREFUeF7s/c+Lb9+a34c1WKCRhCbqbgmJlnWF2pFohdstUNvdNmoQXMXNVV87
         YLcVPBCiRQYCKZgQYW6DTIa2B7ETCCIDh0BGAQ9CICGDEEd/gGcZJGTmaf6CwM37U6+q13mfZ+29a9en
         PlWn6ns+8GL1s55f61lrr9r7OdXne+4v/R/+l//8E/H//f/817/4//3L5v/5f/8X8C//j//bRn2IWwIh
         U4RO8iIOwllu1Px2jP1aFRXuFRmuK7KXE7Y88p9ks0KLJ7Ow3CjpOkbZrhgs4wA8LexF3HAXt4XCNhlb
@@ -2146,6 +2146,256 @@
         Xrag1WIguNVvbvXbsPJV6icb8YoiXaeXf5D63337/wPu4SHfdwmxIgAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>Pantalla_de_Juego</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Player.Name" xml:space="preserve">
+    <value>Player</value>
+  </data>
+  <data name="&gt;&gt;Player.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Player.Parent" xml:space="preserve">
+    <value>Pantalla_de_Juego</value>
+  </data>
+  <data name="&gt;&gt;Player.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Pantalla_de_Juego.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 47</value>
+  </data>
+  <data name="Pantalla_de_Juego.Size" type="System.Drawing.Size, System.Drawing">
+    <value>854, 341</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Pantalla_de_Juego.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Pantalla_de_Juego.Text" xml:space="preserve">
+    <value>pantalla de juego (Test)</value>
+  </data>
+  <data name="&gt;&gt;Pantalla_de_Juego.Name" xml:space="preserve">
+    <value>Pantalla_de_Juego</value>
+  </data>
+  <data name="&gt;&gt;Pantalla_de_Juego.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Pantalla_de_Juego.Parent" xml:space="preserve">
+    <value>PantallaDeJuego</value>
+  </data>
+  <data name="&gt;&gt;Pantalla_de_Juego.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        0gAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 394</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 83</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="button2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="button2.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>PantallaDeJuego</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAA39JREFUeF7t
+        mtuR4jAQRV21CRACIZABhEAGkAFkACGQAWQAGUAGkAFkAH/76a075d7pEa232mA8t+p+YOS2dCy3Hnb1
+        p6rmfTYB+NtTfwOoqqpuy4PBoF4sFvV+v69Xq1U9m83EcqEeDof1eDx+8mg0EsvDLwMwmUzq+/1em7pe
+        r84Ku7xer5soP3U6ncTy8EsAoIFS40n4LwVCZwDgLvt0Pp/Fc13uBID5fN5Uyy+UlWLYrAJASixIXma5
+        UOPOhspVcckqAKSgSGBmuRADXKykODAalSvEaRUAzouV7Vq/ALQAoJvy53273TbFv4XJCy9jVs7mTgBI
+        qaRZOZsxtsfKlnA7CQC+3W7NWX6hrBQD7iyA3W7XnOUX8o8UA0ZvQl25bbEvl8tTWRhxWgeAeUWIHo/H
+        V1kphs1F5gF45jgliepyufxRRgrssq2iXLiGdK7LRQCYBUoOg9yuZ/hwOIjn+NwpAOje0ooQx1Ljvz0A
+        nIfND9dSmAvrBmyUhK49EB/1Ne1aVHkBlLI0oQpV6v5AiFsBkNN4khYEdQDT6bRpQr6Ox6N4jRyrAwjZ
+        /YlRiQTMrQqg5N0npQ6RNicBQGYluYYYVFZDoaNCiFUBaAk9S7peioMB8H0CntUxVtNxPnfHs6ol3ABe
+        txwHAwhpEK8Y5vJacvW6WKsBiFn2xgojC69bjtUAxGx/p4jXLcfBALhDkqC2Ss0KOwsgdkJEiRrmw2gS
+        AKyu0HB4s9k8/a85ApBiAXDxc5MA+NwGgNi5ANdHAOAJ12b0VOwnwFyYx9BxFQAxb4BTFQIAj6hPKgB4
+        ktTSL4AAAEjQlKy58J6Ajn80AG4u9STYewA2p4pXONUARuar1t4AsLlVACFZWZLWljjcCQBSrFIuCgAT
+        IGxdS+sD+OMBUPZHQ6X/UzdJpFilXASAbe5vgiBAMXJ9JVLCbw/A1ptKuQgA+qiCujh9kmJm748FQPbl
+        AFtPcalTADDDku48OQWAbUQhAxAE+NL/PhcF4HMKAFvDABv7e7T7jE0O8+VMiFsFgFwRKxsAWz6J7Qle
+        ALldzHSsXgYAz7HUxXLfzMYKj40Uh6yWAyiwKV+FfMYHkDH6OAC2uDblXs9nKwByLmHTsQA0l8Lw2wOQ
+        YpS0F0BpY2ITIylGSbcOAMZzjb0D9CoYawh8T0S/6WPs3BEnxE8Aeur/AHrqav4PQV76Z+FpTVoAAAAA
+        SUVORK5CYII=
+</value>
+  </data>
+  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>486, 394</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 83</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="button3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="button3.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>PantallaDeJuego</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABLFJREFUeF7t
+        mj1LLEsQhhfubzAUjAz9BSKCoAhiaiYHDATB0MxAFBVREMwM1MSPTIwEQRBMzAwUxMDEQEQQ0xvW5Rmn
+        7mlma3a7Z3rWkd0XnmSrP2re3Z3umerGP43Gn25GDfi3S/lrQKPRkG6iZ0AdDFCNjo6a8SrpGdAzoIMG
+        DA8Py+bmppycnMj19bU8Pj7Kx8dHevkiX19f8vT0JDc3N3J2dpa0pY81ViwqN2B8fFy2t7fl9fU1vcxw
+        0ZcxGMuaowyVGTAzMyN3d3fpJfwV3+7R0ZGsrKzI3NycTExMpJHvv8Ds7KwsLy/LwcFB0jYrxmRsa84i
+        RDdgZGREzs/P03S/dX9/L0tLSzIwMGD2UVn3APrQlzFcMQdzZduHEtWAra2tNL1v8Q1OT0+bbV1U7W6C
+        jJX9VTCn1daXaAZcXFykKYm8vLzIwsKC2c5C5bsKMDZzqJjbaudDFAOen5/TVCT5f/f19Znt8lCFLIPM
+        wVwqcrDataO0Aa7W1tbMNu1QhRigMKcrq00rShlwe3ubTisyNDRktvFBVcQAYG4VOVlt8ihswO7ubjql
+        SH9/v9mmk5CDitysNhaFDFhdXU2nkqhrclnIRUWOVpsswQaw9qr29vbMNj8JOal89gnBBugmh2Uo9G7f
+        CchJl0hytdq4BBng/sRC1vlOQ26qdn/RIAN0b89uzIrXCd0xkrMVV7wNmJqaSgZEPtvbn4YcVeRutQFv
+        A/b395PBeF634nWEXBG5W3HwNuDt7S0ZrOzDRyfRhzNyt+LgZcDY2FgyEBocHGyK1xVyVXENVhsvA9bX
+        15NBfsPNL4veDLkGK+5lwOHhYTLI6elpU6zukDPiGqy4lwGXl5fJIDs7O02xGKiKPgy1gpwR12DFvQzQ
+        11GLi4tNsRioqjCAnBHXYMW9DHh/f08GmZycbIrFQFWFAeSMuAYrnmtAqNxBfWgnq08rQqX9egbkGcDP
+        UaFig9zPsmg/X9y+Kvczq08r3L5ZENfgfqb9cg1w0S0lRQsrXhaVm1gsyBnlbeG9DNDNBBUbK14WVRUG
+        kDPK28R5GUChElGusuJ1hpwR12DFvQygSot+81aYa7DiXgZQolbl1ffqCLmq8srsXgaAlrcpVFrxOkKu
+        iNytOHgbQH0e5W0p64hu4cndioO3ARxOUP22V2KtDlZ4GwBd/VIUuv61OHR1YQTc0hj1eavNT+KeGaik
+        NAbuUZiiZwKqwD0r4Pv2upAB4B6JKXM2IBbuGYGQIzOFDQD3aEyZMwKqog9D7tmA0KMypQwAV+3uuHmo
+        ihjgrkzIatOK0gaAe1SG+nzo6qAKMYA53LMAoUdjlCgGgHtkhmUoZJ+g8jWAsXWpQyFHYrJEMwDcozOI
+        3ZjPtlnVzgDG0h2eyvcoTB5RDQDWXt0sqXgdxbKUV1dUWQbQh776Wk7FHD7rfDuiG6Bwc9JnB1d8g5Sr
+        qNhQtND39ggD5ufnkws+Pj5u+rYRYxa92VpUZoDC4QTq81peLyL6Mkargw5FqdwAF0rUVGkpVFKr43ld
+        q07o8/NTHh4e5OrqKtnSbmxs5Ja1Y9FRA/JQhSyDsegZ0DOgBgb8JD0DsgZ0Kf8b0KU0/vwHyuqq1mSp
+        jQ8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 394</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 83</value>
+  </data>
+  <data name="button1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="button1.Text" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="button1.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
+    <value>ImageAboveText</value>
+  </data>
+  <data name="&gt;&gt;button1.Name" xml:space="preserve">
+    <value>button1</value>
+  </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
+    <value>PantallaDeJuego</value>
+  </data>
+  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PantallaDeJuego.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-265, -226</value>
+  </data>
+  <data name="PantallaDeJuego.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1181, 762</value>
+  </data>
+  <data name="PantallaDeJuego.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PantallaDeJuego.Name" xml:space="preserve">
+    <value>PantallaDeJuego</value>
+  </data>
+  <data name="&gt;&gt;PantallaDeJuego.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PantallaDeJuego.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PantallaDeJuego.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom</value>
   </data>
@@ -2773,7 +3023,6 @@
   <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
@@ -3246,231 +3495,6 @@
   </data>
   <data name="&gt;&gt;Player.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="Pantalla_de_Juego.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 47</value>
-  </data>
-  <data name="Pantalla_de_Juego.Size" type="System.Drawing.Size, System.Drawing">
-    <value>854, 341</value>
-  </data>
-  <data name="Pantalla_de_Juego.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="Pantalla_de_Juego.Text" xml:space="preserve">
-    <value>pantalla de juego (Test)</value>
-  </data>
-  <data name="&gt;&gt;Pantalla_de_Juego.Name" xml:space="preserve">
-    <value>Pantalla_de_Juego</value>
-  </data>
-  <data name="&gt;&gt;Pantalla_de_Juego.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Pantalla_de_Juego.Parent" xml:space="preserve">
-    <value>PantallaDeJuego</value>
-  </data>
-  <data name="&gt;&gt;Pantalla_de_Juego.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-        0gAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 394</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 83</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="button2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="button2.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>PantallaDeJuego</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="button3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAA39JREFUeF7t
-        mtuR4jAQRV21CRACIZABhEAGkAFkACGQAWQAGUAGkAFkAH/76a075d7pEa232mA8t+p+YOS2dCy3Hnb1
-        p6rmfTYB+NtTfwOoqqpuy4PBoF4sFvV+v69Xq1U9m83EcqEeDof1eDx+8mg0EsvDLwMwmUzq+/1em7pe
-        r84Ku7xer5soP3U6ncTy8EsAoIFS40n4LwVCZwDgLvt0Pp/Fc13uBID5fN5Uyy+UlWLYrAJASixIXma5
-        UOPOhspVcckqAKSgSGBmuRADXKykODAalSvEaRUAzouV7Vq/ALQAoJvy53273TbFv4XJCy9jVs7mTgBI
-        qaRZOZsxtsfKlnA7CQC+3W7NWX6hrBQD7iyA3W7XnOUX8o8UA0ZvQl25bbEvl8tTWRhxWgeAeUWIHo/H
-        V1kphs1F5gF45jgliepyufxRRgrssq2iXLiGdK7LRQCYBUoOg9yuZ/hwOIjn+NwpAOje0ooQx1Ljvz0A
-        nIfND9dSmAvrBmyUhK49EB/1Ne1aVHkBlLI0oQpV6v5AiFsBkNN4khYEdQDT6bRpQr6Ox6N4jRyrAwjZ
-        /YlRiQTMrQqg5N0npQ6RNicBQGYluYYYVFZDoaNCiFUBaAk9S7peioMB8H0CntUxVtNxPnfHs6ol3ABe
-        txwHAwhpEK8Y5vJacvW6WKsBiFn2xgojC69bjtUAxGx/p4jXLcfBALhDkqC2Ss0KOwsgdkJEiRrmw2gS
-        AKyu0HB4s9k8/a85ApBiAXDxc5MA+NwGgNi5ANdHAOAJ12b0VOwnwFyYx9BxFQAxb4BTFQIAj6hPKgB4
-        ktTSL4AAAEjQlKy58J6Ajn80AG4u9STYewA2p4pXONUARuar1t4AsLlVACFZWZLWljjcCQBSrFIuCgAT
-        IGxdS+sD+OMBUPZHQ6X/UzdJpFilXASAbe5vgiBAMXJ9JVLCbw/A1ptKuQgA+qiCujh9kmJm748FQPbl
-        AFtPcalTADDDku48OQWAbUQhAxAE+NL/PhcF4HMKAFvDABv7e7T7jE0O8+VMiFsFgFwRKxsAWz6J7Qle
-        ALldzHSsXgYAz7HUxXLfzMYKj40Uh6yWAyiwKV+FfMYHkDH6OAC2uDblXs9nKwByLmHTsQA0l8Lw2wOQ
-        YpS0F0BpY2ITIylGSbcOAMZzjb0D9CoYawh8T0S/6WPs3BEnxE8Aeur/AHrqav4PQV76Z+FpTVoAAAAA
-        SUVORK5CYII=
-</value>
-  </data>
-  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 394</value>
-  </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 83</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="button3.Text" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="button3.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="button3.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>PantallaDeJuego</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABLFJREFUeF7t
-        mj1LLEsQhhfubzAUjAz9BSKCoAhiaiYHDATB0MxAFBVREMwM1MSPTIwEQRBMzAwUxMDEQEQQ0xvW5Rmn
-        7mlma3a7Z3rWkd0XnmSrP2re3Z3umerGP43Gn25GDfi3S/lrQKPRkG6iZ0AdDFCNjo6a8SrpGdAzoIMG
-        DA8Py+bmppycnMj19bU8Pj7Kx8dHevkiX19f8vT0JDc3N3J2dpa0pY81ViwqN2B8fFy2t7fl9fU1vcxw
-        0ZcxGMuaowyVGTAzMyN3d3fpJfwV3+7R0ZGsrKzI3NycTExMpJHvv8Ds7KwsLy/LwcFB0jYrxmRsa84i
-        RDdgZGREzs/P03S/dX9/L0tLSzIwMGD2UVn3APrQlzFcMQdzZduHEtWAra2tNL1v8Q1OT0+bbV1U7W6C
-        jJX9VTCn1daXaAZcXFykKYm8vLzIwsKC2c5C5bsKMDZzqJjbaudDFAOen5/TVCT5f/f19Znt8lCFLIPM
-        wVwqcrDataO0Aa7W1tbMNu1QhRigMKcrq00rShlwe3ubTisyNDRktvFBVcQAYG4VOVlt8ihswO7ubjql
-        SH9/v9mmk5CDitysNhaFDFhdXU2nkqhrclnIRUWOVpsswQaw9qr29vbMNj8JOal89gnBBugmh2Uo9G7f
-        CchJl0hytdq4BBng/sRC1vlOQ26qdn/RIAN0b89uzIrXCd0xkrMVV7wNmJqaSgZEPtvbn4YcVeRutQFv
-        A/b395PBeF634nWEXBG5W3HwNuDt7S0ZrOzDRyfRhzNyt+LgZcDY2FgyEBocHGyK1xVyVXENVhsvA9bX
-        15NBfsPNL4veDLkGK+5lwOHhYTLI6elpU6zukDPiGqy4lwGXl5fJIDs7O02xGKiKPgy1gpwR12DFvQzQ
-        11GLi4tNsRioqjCAnBHXYMW9DHh/f08GmZycbIrFQFWFAeSMuAYrnmtAqNxBfWgnq08rQqX9egbkGcDP
-        UaFig9zPsmg/X9y+Kvczq08r3L5ZENfgfqb9cg1w0S0lRQsrXhaVm1gsyBnlbeG9DNDNBBUbK14WVRUG
-        kDPK28R5GUChElGusuJ1hpwR12DFvQygSot+81aYa7DiXgZQolbl1ffqCLmq8srsXgaAlrcpVFrxOkKu
-        iNytOHgbQH0e5W0p64hu4cndioO3ARxOUP22V2KtDlZ4GwBd/VIUuv61OHR1YQTc0hj1eavNT+KeGaik
-        NAbuUZiiZwKqwD0r4Pv2upAB4B6JKXM2IBbuGYGQIzOFDQD3aEyZMwKqog9D7tmA0KMypQwAV+3uuHmo
-        ihjgrkzIatOK0gaAe1SG+nzo6qAKMYA53LMAoUdjlCgGgHtkhmUoZJ+g8jWAsXWpQyFHYrJEMwDcozOI
-        3ZjPtlnVzgDG0h2eyvcoTB5RDQDWXt0sqXgdxbKUV1dUWQbQh776Wk7FHD7rfDuiG6Bwc9JnB1d8g5Sr
-        qNhQtND39ggD5ufnkws+Pj5u+rYRYxa92VpUZoDC4QTq81peLyL6Mkargw5FqdwAF0rUVGkpVFKr43ld
-        q07o8/NTHh4e5OrqKtnSbmxs5Ja1Y9FRA/JQhSyDsegZ0DOgBgb8JD0DsgZ0Kf8b0KU0/vwHyuqq1mSp
-        jQ8AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="button1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>332, 394</value>
-  </data>
-  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 83</value>
-  </data>
-  <data name="button1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
-  <data name="button1.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>PantallaDeJuego</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="PantallaDeJuego.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-265, -226</value>
-  </data>
-  <data name="PantallaDeJuego.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1181, 762</value>
-  </data>
-  <data name="PantallaDeJuego.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;PantallaDeJuego.Name" xml:space="preserve">
-    <value>PantallaDeJuego</value>
-  </data>
-  <data name="&gt;&gt;PantallaDeJuego.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PantallaDeJuego.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PantallaDeJuego.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="Contador.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>181, 17</value>

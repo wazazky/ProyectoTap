@@ -15,12 +15,15 @@ namespace ProyectoTAP
 
     public partial class Form1 : Form
     {
+        int cont = 0;
         Personaje p1;
         Personaje p2;
         Personaje Espectador;
         public Form1()
         {
+            
             InitializeComponent();
+            Contador.Start();
             Console.WriteLine("Linea en public form1");
 
             crearpj();
@@ -55,8 +58,11 @@ namespace ProyectoTAP
         }
 
         private void timer1_Tick(object sender, EventArgs e)
-        {
-
+            {
+            //Console.WriteLine(Player.Location.ToString());
+           cont++;
+           Console.WriteLine(cont);
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
