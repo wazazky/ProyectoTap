@@ -39,7 +39,7 @@ public class Personaje
         this.Suerte = Suerte;
         this.vida = (Resistencia * 5) + (Fuerza * 5);
         this.escudo = 0;
-    }//este es un comentario
+    }
     public Personaje(int id)
     {
         Random rnd = new Random();

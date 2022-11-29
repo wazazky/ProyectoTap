@@ -32,3 +32,20 @@ C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\Proyect
 C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\zu\ProyectoTAP.resources.dll
 C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.exe
 C:\Users\Jesus\OneDrive\Documents\Workshop Code\Porgramas C#\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.pdb
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\bin\Debug\ProyectoTAP.exe.config
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\bin\Debug\ProyectoTAP.exe
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\bin\Debug\ProyectoTAP.pdb
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\bin\Debug\zu-ZA\ProyectoTAP.resources.dll
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\bin\Debug\zu\ProyectoTAP.resources.dll
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.csproj.AssemblyReference.cache
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.csproj.SuggestedBindingRedirects.cache
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Form1.resources
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Properties.Resources.resources
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Form1.zu-ZA.resources
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Form1.zu.resources
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.csproj.GenerateResource.cache
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.csproj.CoreCompileInputs.cache
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\zu-ZA\ProyectoTAP.resources.dll
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\zu\ProyectoTAP.resources.dll
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.exe
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.pdb
