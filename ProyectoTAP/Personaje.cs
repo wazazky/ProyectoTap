@@ -1,6 +1,6 @@
 ﻿using System;
 
-
+using System.Media;
 
 public class Personaje
 {
@@ -39,7 +39,7 @@ public class Personaje
         this.Suerte = Suerte;
         this.vida = (Resistencia * 5) + (Fuerza * 5);
         this.escudo = 0;
-    }//este es un comentario
+    }
     public Personaje(int id)
     {
         Random rnd = new Random();
@@ -55,6 +55,12 @@ public class Personaje
         this.vida = (Resistencia * 5) + (Fuerza * 5);
         this.escudo = 0;
     }
+    public Personaje()//este consturctor es para el Espectador
+    { 
+
+    }
+
+
     public void Ataque(Personaje Atacante, Personaje Defensor, int damage)
     {
         float daño = (Atacante.Fuerza) * (damage);
