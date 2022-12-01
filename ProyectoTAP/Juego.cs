@@ -74,7 +74,7 @@ namespace ProyectoTAP
             Player2Image.Image = Image.FromFile(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\e\\i.gif");
             Player1Image.Image = Image.FromFile(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\p\\s.gif");
             Espectador.Defender(P1, P1CD.ImageIndex.ToString()); Espectador.mostrar(P1, P2);
-             efecto(escudo);
+             handler.Sonido(escudo);
             cambiarTurno();
         }
 
@@ -83,7 +83,7 @@ namespace ProyectoTAP
             Player2Image.Image = Image.FromFile(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\e\\i.gif");
             Player1Image.Image = Image.FromFile(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\p\\c.gif");
             Espectador.Curar(P1, P1CC.ImageIndex.ToString()); Espectador.mostrar(P1, P2);
-             efecto(cura);
+             handler.Sonido(cura);
             cambiarTurno();
         }
 
@@ -92,7 +92,7 @@ namespace ProyectoTAP
             Player2Image.Image = Image.FromFile(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\e\\c.gif");
             Player1Image.Image = Image.FromFile(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\p\\i.gif");
             Espectador.Curar(P2, P2CC.ImageIndex.ToString()); Espectador.mostrar(P1, P2);
-             efecto(cura);
+             handler.Sonido(cura);
             cambiarTurno();
         }
 
@@ -101,7 +101,7 @@ namespace ProyectoTAP
             Player2Image.Image = Image.FromFile(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\e\\s.gif");
             Player1Image.Image = Image.FromFile(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\p\\i.gif");
             Espectador.Defender(P2, P2CD.ImageIndex.ToString()); Espectador.mostrar(P1, P2);
-             efecto(escudo);
+             handler.Sonido(escudo);
             cambiarTurno();
         }
 
@@ -110,17 +110,11 @@ namespace ProyectoTAP
             Player2Image.Image =Image.FromFile(System.Windows.Forms.Application.StartupPath+"\\Recursos Proyecto TAP\\e\\a.gif");
             Player1Image.Image = Image.FromFile(System.Windows.Forms.Application.StartupPath + "\\Recursos Proyecto TAP\\p\\h.gif");
             Espectador.Ataque(P2, P1, P1CA.ImageIndex.ToString()); Espectador.mostrar(P1, P2);
-             efecto(golpe);
+             handler.Sonido(golpe);
             cambiarTurno();
         }
 
-        public void efecto(string direccion)
-        {
-
-            SoundPlayer sonido = new SoundPlayer(System.Windows.Forms.Application.StartupPath + direccion);
-            sonido.Play();
-
-        }
+       
 
         
 

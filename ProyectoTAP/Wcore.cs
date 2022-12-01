@@ -20,37 +20,20 @@ namespace ProyectoTAP
             //Musica.Play();
             return Musica;
         }
-       public void Sonido(string direccion) {
-            dir = direccion;
-            Thread thread = new Thread(new ThreadStart(WorkThreadFunction));
-            thread.Start();
-
-        }
-        public void  efecto(string direccion)
+   public void Sonido(string direccion)
         {
-
-            SoundPlayer sonido = new SoundPlayer(System.Windows.Forms.Application.StartupPath + direccion);
-            sonido.Play();
-            
+           
+            SoundPlayer Musica = new SoundPlayer(System.Windows.Forms.Application.StartupPath + direccion);
+            Musica.Play();
+           
         }
+ 
 
         
 
 
 
 
-public void WorkThreadFunction()
-    {
-        try
-        {
-            SoundPlayer sonido = new SoundPlayer(System.Windows.Forms.Application.StartupPath + dir);
-                sonido.Play();
-        }
-        catch (Exception ex)
-        {
-            // log errors
-        }
-    }
 
 }
 }
