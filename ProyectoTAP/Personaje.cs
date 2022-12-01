@@ -1,6 +1,8 @@
 ﻿using System;
 
 using System.Media;
+using System.Reflection;
+using System.Windows.Forms;
 
 public class Personaje
 {
@@ -8,7 +10,6 @@ public class Personaje
     int Fuerza;//modificador para el daño y el calculo d vida total 
     int Persepcion;//modificador de punteria 
     int Resistencia;//Modificador para la vida
-    int Carisma;// reduce el costo de los objetos 
     int Inteligencia;//el modificador de aumenta la curacion y el escudo 
     int Agilidad;//modificador para bajar la punteria al enemigo
     int Suerte;//padan cosas 
@@ -19,7 +20,7 @@ public class Personaje
     public global::System.Int32 Fuerza1 { get => Fuerza; set => Fuerza = value; }
     public global::System.Int32 Persepcion1 { get => Persepcion; set => Persepcion = value; }
     public global::System.Int32 Resistencia1 { get => Resistencia; set => Resistencia = value; }
-    public global::System.Int32 Carisma1 { get => Carisma; set => Carisma = value; }
+    
     public global::System.Int32 Inteligencia1 { get => Inteligencia; set => Inteligencia = value; }
     public global::System.Int32 Suerte1 { get => Suerte; set => Suerte = value; }
     public float Vida { get => vida; set => vida = value; }
@@ -27,18 +28,18 @@ public class Personaje
     public int Agilidad1 { get => Agilidad2; set => Agilidad2 = value; }
     public int Agilidad2 { get => Agilidad; set => Agilidad = value; }
 
-    public Personaje(int id, int Fuerza, int Persepcion, int Resistencia, int Carisma, int Inteligencia,int Agilidad, int Suerte)
+    public Personaje(int id, int Fuerza, int Persepcion, int Resistencia, int Inteligencia,int Agilidad, int Suerte)
     {
         this.id = id;
         this.Fuerza = Fuerza;
         this.Persepcion = Persepcion;
         this.Resistencia = Resistencia;
-        this.Carisma = Carisma;
+       
         this.Inteligencia = Inteligencia;
-        this.Agilidad2 = Agilidad;
+        this.Agilidad = Agilidad;
         this.Suerte = Suerte;
-        this.vida = (Resistencia * 5) + (Fuerza * 5);
-        this.escudo = 0;
+        this.vida = 50+(Resistencia * 2) + (Fuerza * 2);//el maximo valor base es 50
+        this.escudo = 0;//el maximo valor base es 20
     }
     public Personaje(int id)
     {
@@ -48,11 +49,10 @@ public class Personaje
         this.Fuerza = rnd.Next(10);
         this.Persepcion = rnd.Next(10);
         this.Resistencia = rnd.Next(10);
-        this.Carisma = rnd.Next(10);
         this.Inteligencia = rnd.Next(10);
         this.Suerte = rnd.Next(10);
         this.Agilidad2 = rnd.Next(10);
-        this.vida = (Resistencia * 5) + (Fuerza * 5);
+        this.vida =50+ (Resistencia * 2) + (Fuerza * 2);
         this.escudo = 0;
     }
     public Personaje()//este consturctor es para el Espectador
@@ -61,8 +61,12 @@ public class Personaje
     }
 
 
-    public void Ataque(Personaje Atacante, Personaje Defensor, int damage)
+    public void Ataque(Personaje Atacante, Personaje Defensor, string index)
     {
+        int damage = 0;
+        if (index == "0") damage=1 ;
+        if (index == "1") damage=4 ;
+        if (index == "2") damage=9 ;
         float daño = (Atacante.Fuerza) * (damage);
         if (Defensor.escudo > 0)
         {
@@ -77,27 +81,33 @@ public class Personaje
         }
 
     }
-    public void Curar(Personaje Defensor, int cura) {
-        Defensor.vida = Defensor.vida + cura * (Defensor.Inteligencia);
+    public void Curar(Personaje personaje, String index) {
+        int cura = 0;
+        if (index == "0") cura = 1;
+        if (index == "1") cura = 4;
+        if (index == "2") cura = 9;
+        personaje.vida = personaje.vida + cura * (personaje.Inteligencia); 
+        if(personaje.vida >50+ (personaje.Resistencia*2)+(personaje.Fuerza*2)) personaje.vida = 50+(personaje.Resistencia*2)+(personaje.Fuerza*2);
     }
-    public void eleccion(Personaje Atacante, Personaje Defensor) {
+   
+    public void Defender(Personaje personaje,String index )
+    {
+        int escudo = 0;
+        if (index == "0") escudo = 1;
+        if (index == "1") escudo = 4;
+        if (index == "2") escudo = 9;
+        
+        personaje.escudo = personaje.escudo + (escudo*(personaje.Inteligencia));
+        if (personaje.escudo > 20 + ((personaje.Resistencia)*2)) personaje.escudo= 20 + (personaje.Resistencia*2);
 
-        Random rnd = new Random();
-        int eleccion = rnd.Next(2);
-        if (eleccion == 1)
-        {
-            Curar(Defensor , rnd.Next(5));
-
-        }
-        else {
-            Ataque(Defensor,Atacante, rnd.Next(5));
-        }       
-        }
+    }
+        
     public void mostrar(Personaje p1,Personaje p2) {
 
-        Console.WriteLine("id de personaje " + p1.id+ "Vida de personaje "+p1.Vida);
-        Console.WriteLine("id de personaje " + p2.id+ "Vida de personaje "+p2.Vida);
-
+        Console.WriteLine("id de personaje " + p1.id+ "Vida de personaje "+p1.Vida+ " " + p1.Fuerza + " " + p1.Resistencia);
+       
+        Console.WriteLine("id de personaje " + p2.id+ "Vida de personaje "+p2.Vida+ " " + p2.Fuerza + " " + p2.Resistencia+"\n");
+        
     
     }
 }
