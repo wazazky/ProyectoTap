@@ -18,19 +18,21 @@ namespace ProyectoTAP
     public partial class ProjectWindow : Form
     {
         string MMenu = "\\Recursos Proyecto TAP\\sonido\\Musica Menu.wav";
-        string MJuego ="";
+        string MJuego = "\\Recursos Proyecto TAP\\sonido\\The_Untold.wav";
+        
         SoundPlayer musicaMenu;
+        SoundPlayer MusicaJuego;
         Wcore controlador=new Wcore();
         public ProjectWindow()
         {
             musicaMenu = controlador.playSimpleSound(MMenu);
+            MusicaJuego = controlador.playSimpleSound(MJuego);
+            musicaMenu.Play(); 
             InitializeComponent();
-            
-            Contador.Start();
-            Console.WriteLine("Linea en public form1");
+            //Contador.Start();
             menu.Show();
             AtrasPicture.Hide();
-                }
+         }
 
         private void SalirPicture_Click(object sender, EventArgs e)
         {
@@ -41,18 +43,24 @@ namespace ProyectoTAP
 
         private void AtrasPicture_Click(object sender, EventArgs e)
         {
-            musicaMenu.Play();
+            MusicaJuego.Stop(); 
+            if (juego.Visible) musicaMenu.Play();//condicion para no reproducir musica cuando se llama desde el control de creditos   
+          
             creditos.Hide();
             juego.Hide();
             menu.Show();
             AtrasPicture.Hide();
             btnJugar.Show();
             btnCreditos.Show();
+            SalirPicture.Show();
         }
 
         private void btnJugar_Click(object sender, EventArgs e)
         {
             musicaMenu.Stop();
+            MusicaJuego.Play();
+            SalirPicture.Hide();
+           
             creditos.Hide();
             juego.Show();
             menu.Hide();
@@ -72,6 +80,9 @@ namespace ProyectoTAP
             AtrasPicture.Show();
 
         }
+
+         
+       
     }
 
 }

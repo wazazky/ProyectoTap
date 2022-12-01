@@ -125,5 +125,32 @@
   <ItemGroup>
     <None Include="bin\Debug\Recursos Proyecto TAP\Personajes\image 2.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos Proyecto TAP\cartas\carta0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos Proyecto TAP\cartas\carta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos Proyecto TAP\cartas\carta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos Proyecto TAP\cartas\carta3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos Proyecto TAP\cartas\carta4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos Proyecto TAP\cartas\carta5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos Proyecto TAP\cartas\carta6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos Proyecto TAP\cartas\carta7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Recursos Proyecto TAP\cartas\carta8.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

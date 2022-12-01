@@ -45,6 +45,10 @@ namespace ProyectoTAP
             ((System.ComponentModel.ISupportInitialize)(this.AtrasPicture)).BeginInit();
             this.SuspendLayout();
             // 
+            // Contador
+            // 
+           
+            // 
             // SalirPicture
             // 
             this.SalirPicture.BackColor = System.Drawing.Color.Transparent;
