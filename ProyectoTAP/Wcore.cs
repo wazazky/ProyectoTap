@@ -16,7 +16,6 @@ namespace ProyectoTAP
             SoundPlayer Musica = new SoundPlayer(System.Windows.Forms.Application.StartupPath + direccion);
             Musica.Play();
             return Musica;
-           
         }
 
     }

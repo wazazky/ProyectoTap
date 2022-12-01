@@ -16,8 +16,10 @@ namespace ProyectoTAP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VentanaMenu());
-            Console.WriteLine("esto esta corriendo desde program.cs");
+            Application.Run(new ProjectWindow());
+          
+
+           
         }
     }
 }

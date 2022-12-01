@@ -46,7 +46,9 @@ E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug
 E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\zu\ProyectoTAP.resources.dll
 E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.exe
 E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.pdb
-E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.VentanaDeJuego.resources
-E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.VentanaMenu.resources
-E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.VentanaMenu.zu-ZA.resources
-E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.VentanaMenu.zu.resources
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Menu.resources
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.ProjectWindow.resources
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.ProjectWindow.zu-ZA.resources
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.ProjectWindow.zu.resources
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Juego.resources
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Creditos.resources
