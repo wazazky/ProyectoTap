@@ -38,13 +38,19 @@ namespace ProyectoTAP
             this.P1CA = new System.Windows.Forms.Button();
             this.ListaDeAtaques = new System.Windows.Forms.ImageList(this.components);
             this.P1CD = new System.Windows.Forms.Button();
+            this.ListaDeDefensas = new System.Windows.Forms.ImageList(this.components);
             this.ListaDeCuras = new System.Windows.Forms.ImageList(this.components);
             this.P1CC = new System.Windows.Forms.Button();
-            this.ListaDeDefensas = new System.Windows.Forms.ImageList(this.components);
             this.P2CA = new System.Windows.Forms.Button();
             this.P2CD = new System.Windows.Forms.Button();
             this.P2CC = new System.Windows.Forms.Button();
             this.FlechaTurno = new System.Windows.Forms.PictureBox();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.labelVictoria = new System.Windows.Forms.Label();
+            this.labelvidaP1 = new System.Windows.Forms.Label();
+            this.labelvidaP2 = new System.Windows.Forms.Label();
+            this.labelescudoP1 = new System.Windows.Forms.Label();
+            this.labelescudoP2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.FondoPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player1Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2Image)).BeginInit();
@@ -133,6 +139,14 @@ namespace ProyectoTAP
             this.P1CD.UseVisualStyleBackColor = false;
             this.P1CD.Click += new System.EventHandler(this.P1CD_Click);
             // 
+            // ListaDeDefensas
+            // 
+            this.ListaDeDefensas.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ListaDeDefensas.ImageStream")));
+            this.ListaDeDefensas.TransparentColor = System.Drawing.Color.Transparent;
+            this.ListaDeDefensas.Images.SetKeyName(0, "carta3.png");
+            this.ListaDeDefensas.Images.SetKeyName(1, "carta4.png");
+            this.ListaDeDefensas.Images.SetKeyName(2, "carta5.png");
+            // 
             // ListaDeCuras
             // 
             this.ListaDeCuras.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ListaDeCuras.ImageStream")));
@@ -160,14 +174,6 @@ namespace ProyectoTAP
             this.P1CC.UseVisualStyleBackColor = false;
             this.P1CC.Click += new System.EventHandler(this.P1CC_Click);
             // 
-            // ListaDeDefensas
-            // 
-            this.ListaDeDefensas.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ListaDeDefensas.ImageStream")));
-            this.ListaDeDefensas.TransparentColor = System.Drawing.Color.Transparent;
-            this.ListaDeDefensas.Images.SetKeyName(0, "carta3.png");
-            this.ListaDeDefensas.Images.SetKeyName(1, "carta4.png");
-            this.ListaDeDefensas.Images.SetKeyName(2, "carta5.png");
-            // 
             // P2CA
             // 
             this.P2CA.BackColor = System.Drawing.Color.Black;
@@ -177,7 +183,7 @@ namespace ProyectoTAP
             this.P2CA.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.P2CA.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.P2CA.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.P2CA.ImageIndex = 1;
+            this.P2CA.ImageIndex = 2;
             this.P2CA.ImageList = this.ListaDeAtaques;
             this.P2CA.Location = new System.Drawing.Point(1032, 0);
             this.P2CA.Margin = new System.Windows.Forms.Padding(0);
@@ -236,12 +242,93 @@ namespace ProyectoTAP
             this.FlechaTurno.TabIndex = 9;
             this.FlechaTurno.TabStop = false;
             // 
+            // btnReset
+            // 
+            this.btnReset.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
+            this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnReset.Location = new System.Drawing.Point(571, 386);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(75, 23);
+            this.btnReset.TabIndex = 10;
+            this.btnReset.Text = "Reiniciar";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Visible = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // labelVictoria
+            // 
+            this.labelVictoria.AutoSize = true;
+            this.labelVictoria.BackColor = System.Drawing.Color.Transparent;
+            this.labelVictoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelVictoria.Font = new System.Drawing.Font("Segoe UI Emoji", 26.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelVictoria.ForeColor = System.Drawing.Color.White;
+            this.labelVictoria.Location = new System.Drawing.Point(492, 263);
+            this.labelVictoria.Name = "labelVictoria";
+            this.labelVictoria.Size = new System.Drawing.Size(114, 49);
+            this.labelVictoria.TabIndex = 11;
+            this.labelVictoria.Text = "label1";
+            // 
+            // labelvidaP1
+            // 
+            this.labelvidaP1.AutoSize = true;
+            this.labelvidaP1.BackColor = System.Drawing.Color.Transparent;
+            this.labelvidaP1.Font = new System.Drawing.Font("Segoe UI Emoji", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelvidaP1.ForeColor = System.Drawing.Color.White;
+            this.labelvidaP1.Location = new System.Drawing.Point(63, 351);
+            this.labelvidaP1.Name = "labelvidaP1";
+            this.labelvidaP1.Size = new System.Drawing.Size(78, 32);
+            this.labelvidaP1.TabIndex = 12;
+            this.labelvidaP1.Text = "label1";
+            // 
+            // labelvidaP2
+            // 
+            this.labelvidaP2.AutoSize = true;
+            this.labelvidaP2.BackColor = System.Drawing.Color.Transparent;
+            this.labelvidaP2.Font = new System.Drawing.Font("Segoe UI Emoji", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelvidaP2.ForeColor = System.Drawing.Color.White;
+            this.labelvidaP2.Location = new System.Drawing.Point(1022, 351);
+            this.labelvidaP2.Name = "labelvidaP2";
+            this.labelvidaP2.Size = new System.Drawing.Size(78, 32);
+            this.labelvidaP2.TabIndex = 13;
+            this.labelvidaP2.Text = "label1";
+            // 
+            // labelescudoP1
+            // 
+            this.labelescudoP1.AutoSize = true;
+            this.labelescudoP1.BackColor = System.Drawing.Color.Transparent;
+            this.labelescudoP1.Font = new System.Drawing.Font("Segoe UI Emoji", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelescudoP1.ForeColor = System.Drawing.Color.White;
+            this.labelescudoP1.Location = new System.Drawing.Point(63, 395);
+            this.labelescudoP1.Name = "labelescudoP1";
+            this.labelescudoP1.Size = new System.Drawing.Size(78, 32);
+            this.labelescudoP1.TabIndex = 14;
+            this.labelescudoP1.Text = "label3";
+            // 
+            // labelescudoP2
+            // 
+            this.labelescudoP2.AutoSize = true;
+            this.labelescudoP2.BackColor = System.Drawing.Color.Transparent;
+            this.labelescudoP2.Font = new System.Drawing.Font("Segoe UI Emoji", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelescudoP2.ForeColor = System.Drawing.Color.White;
+            this.labelescudoP2.Location = new System.Drawing.Point(1022, 395);
+            this.labelescudoP2.Name = "labelescudoP2";
+            this.labelescudoP2.Size = new System.Drawing.Size(78, 32);
+            this.labelescudoP2.TabIndex = 15;
+            this.labelescudoP2.Text = "label4";
+            // 
             // Juego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.labelescudoP2);
+            this.Controls.Add(this.labelescudoP1);
+            this.Controls.Add(this.labelvidaP2);
+            this.Controls.Add(this.labelvidaP1);
+            this.Controls.Add(this.labelVictoria);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.FlechaTurno);
             this.Controls.Add(this.P2CA);
             this.Controls.Add(this.P2CD);
@@ -260,6 +347,7 @@ namespace ProyectoTAP
             ((System.ComponentModel.ISupportInitialize)(this.Player2Image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FlechaTurno)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -278,5 +366,11 @@ namespace ProyectoTAP
         private System.Windows.Forms.ImageList ListaDeAtaques;
         private System.Windows.Forms.ImageList ListaDeDefensas;
         private PictureBox FlechaTurno;
+        private Button btnReset;
+        private Label labelVictoria;
+        private Label labelvidaP1;
+        private Label labelvidaP2;
+        private Label labelescudoP1;
+        private Label labelescudoP2;
     }
 }

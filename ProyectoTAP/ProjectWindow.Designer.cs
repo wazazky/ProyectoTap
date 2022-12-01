@@ -45,10 +45,6 @@ namespace ProyectoTAP
             ((System.ComponentModel.ISupportInitialize)(this.AtrasPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // Contador
-            // 
-           
-            // 
             // SalirPicture
             // 
             this.SalirPicture.BackColor = System.Drawing.Color.Transparent;
@@ -68,6 +64,7 @@ namespace ProyectoTAP
             // 
             this.btnJugar.BackColor = System.Drawing.Color.Transparent;
             resources.ApplyResources(this.btnJugar, "btnJugar");
+            this.btnJugar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnJugar.Name = "btnJugar";
             this.btnJugar.UseVisualStyleBackColor = false;
             this.btnJugar.Click += new System.EventHandler(this.btnJugar_Click);
@@ -75,6 +72,7 @@ namespace ProyectoTAP
             // btnCreditos
             // 
             resources.ApplyResources(this.btnCreditos, "btnCreditos");
+            this.btnCreditos.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnCreditos.Name = "btnCreditos";
             this.btnCreditos.UseVisualStyleBackColor = true;
             this.btnCreditos.Click += new System.EventHandler(this.btnCreditos_Click);

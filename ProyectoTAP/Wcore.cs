@@ -13,19 +13,22 @@ namespace ProyectoTAP
     internal class Wcore
     {
         string dir;
-        public SoundPlayer playSimpleSound(string direccion)
+        public static SoundPlayer playSimpleSound(string direccion)
         {
            
             SoundPlayer Musica = new SoundPlayer(System.Windows.Forms.Application.StartupPath + direccion);
             //Musica.Play();
+           
             return Musica;
         }
-   public void Sonido(string direccion)
+   public static void Sonido(string direccion)
         {
            
             SoundPlayer Musica = new SoundPlayer(System.Windows.Forms.Application.StartupPath + direccion);
             Musica.Play();
            
+
+
         }
  
 

@@ -12,7 +12,7 @@ public class Personaje
     int Resistencia;//Modificador para la vida
     int Inteligencia;//el modificador de aumenta la curacion y el escudo 
     int Agilidad;//modificador para bajar la punteria al enemigo
-    int Suerte;//padan cosas 
+    int Suerte;//pasan cosas 
     float vida;//la vida se calcula en (resistencia*5) * (fuerza*5)
     float escudo;//el escudo se consigue despues y su multipliador es la inteligencia 
 
@@ -61,13 +61,14 @@ public class Personaje
     }
 
 
-    public void Ataque(Personaje Atacante, Personaje Defensor, string index)
+    public static void Ataque(Personaje Atacante, Personaje Defensor, string index)
     {
         int damage = 0;
         if (index == "0") damage=1 ;
         if (index == "1") damage=4 ;
         if (index == "2") damage=9 ;
-        float daño = (Atacante.Fuerza) * (damage);
+        int daño = (Atacante.Fuerza) * (damage);
+        Console.WriteLine(daño.ToString() +" daño "+ index+" index"+damage.ToString().ToString()+"damage");
         if (Defensor.escudo > 0)
         {
             Defensor.escudo = Defensor.escudo - daño;
@@ -81,16 +82,17 @@ public class Personaje
         }
 
     }
-    public void Curar(Personaje personaje, String index) {
+    public static void Curar(Personaje personaje, String index) {
         int cura = 0;
         if (index == "0") cura = 1;
         if (index == "1") cura = 4;
         if (index == "2") cura = 9;
         personaje.vida = personaje.vida + cura * (personaje.Inteligencia); 
+        
         if(personaje.vida >50+ (personaje.Resistencia*2)+(personaje.Fuerza*2)) personaje.vida = 50+(personaje.Resistencia*2)+(personaje.Fuerza*2);
     }
    
-    public void Defender(Personaje personaje,String index )
+    public static void Defender(Personaje personaje,String index )
     {
         int escudo = 0;
         if (index == "0") escudo = 1;
@@ -98,11 +100,11 @@ public class Personaje
         if (index == "2") escudo = 9;
         
         personaje.escudo = personaje.escudo + (escudo*(personaje.Inteligencia));
-        if (personaje.escudo > 20 + ((personaje.Resistencia)*2)) personaje.escudo= 20 + (personaje.Resistencia*2);
+        if (personaje.escudo > 30) personaje.escudo= 30 ;
 
     }
         
-    public void mostrar(Personaje p1,Personaje p2) {
+    public static void mostrar(Personaje p1,Personaje p2) {
 
         Console.WriteLine("id de personaje " + p1.id+ "Vida de personaje "+p1.Vida+ " " + p1.Fuerza + " " + p1.Resistencia);
        

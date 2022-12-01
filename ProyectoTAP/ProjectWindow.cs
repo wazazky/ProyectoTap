@@ -22,17 +22,18 @@ namespace ProyectoTAP
         
         SoundPlayer musicaMenu;
         SoundPlayer MusicaJuego;
-        Wcore controlador=new Wcore();
+        //Wcore controlador=new Wcore();
         public ProjectWindow()
         {
-            musicaMenu = controlador.playSimpleSound(MMenu);
-            MusicaJuego = controlador.playSimpleSound(MJuego);
+            musicaMenu= Wcore.playSimpleSound(MMenu);
+            MusicaJuego = Wcore.playSimpleSound(MJuego);
             musicaMenu.Play(); 
             InitializeComponent();
             //Contador.Start();
             menu.Show();
             AtrasPicture.Hide();
-         }
+            btnJugar.BackColor = Color.FromArgb(120, Color.Black);
+        }
 
         private void SalirPicture_Click(object sender, EventArgs e)
         {
@@ -43,9 +44,8 @@ namespace ProyectoTAP
 
         private void AtrasPicture_Click(object sender, EventArgs e)
         {
-            MusicaJuego.Stop(); 
+            
             if (juego.Visible) musicaMenu.Play();//condicion para no reproducir musica cuando se llama desde el control de creditos   
-          
             creditos.Hide();
             juego.Hide();
             menu.Show();
