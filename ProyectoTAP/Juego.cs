@@ -25,6 +25,7 @@ namespace ProyectoTAP
         string escudo = "\\Recursos Proyecto TAP\\sonido\\s.wav";
         string golpe = "\\Recursos Proyecto TAP\\sonido\\a.wav";
         string victoria= "\\Recursos Proyecto TAP\\sonido\\end.wav";
+        string rol= "\\Recursos Proyecto TAP\\sonido\\t.wav";
         bool Turno = true;//true es para el Player1 , false es para el player 2
         bool readyP1=false, readyP2=false;
 
@@ -272,6 +273,7 @@ namespace ProyectoTAP
             btnRolCP1.Hide();
             btnRolEP1.Hide();
             btnRolFP1.Enabled= false;
+            Wcore.Sonido(rol);
         }
 
         private void btnRolCP1_Click(object sender, EventArgs e)
@@ -282,6 +284,7 @@ namespace ProyectoTAP
             btnRolFP1.Hide();
             btnRolEP1.Hide();
             btnRolCP1.Enabled = false;
+            Wcore.Sonido(rol);
         }
 
         private void btnRolEP1_Click(object sender, EventArgs e)
@@ -292,6 +295,7 @@ namespace ProyectoTAP
             btnRolFP1.Hide();
             btnRolCP1.Hide();
             btnRolEP1.Enabled = false;
+            Wcore.Sonido(rol);
         }
 
         private void btnRolEP2_Click(object sender, EventArgs e)
@@ -302,7 +306,7 @@ namespace ProyectoTAP
             btnRolFP2.Hide();
             btnRolCP2.Hide();
             btnRolEP2.Enabled = false;
-
+            Wcore.Sonido(rol);
         }
 
         private void btnRolCP2_Click(object sender, EventArgs e)
@@ -313,6 +317,7 @@ namespace ProyectoTAP
             btnRolFP2.Hide();
             btnRolEP2.Hide();
             btnRolCP2.Enabled = false;
+            Wcore.Sonido(rol);
 
         }
 

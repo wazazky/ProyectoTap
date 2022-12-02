@@ -31,13 +31,12 @@ namespace ProyectoTAP
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProjectWindow));
-            this.Contador = new System.Windows.Forms.Timer(this.components);
             this.SalirPicture = new System.Windows.Forms.PictureBox();
             this.AtrasPicture = new System.Windows.Forms.PictureBox();
             this.btnJugar = new System.Windows.Forms.Button();
             this.btnCreditos = new System.Windows.Forms.Button();
+            this.Version = new System.Windows.Forms.Label();
             this.menu = new ProyectoTAP.Menu();
             this.juego = new ProyectoTAP.Juego();
             this.creditos = new ProyectoTAP.Creditos();
@@ -77,6 +76,12 @@ namespace ProyectoTAP
             this.btnCreditos.UseVisualStyleBackColor = true;
             this.btnCreditos.Click += new System.EventHandler(this.btnCreditos_Click);
             // 
+            // Version
+            // 
+            resources.ApplyResources(this.Version, "Version");
+            this.Version.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Version.Name = "Version";
+            // 
             // menu
             // 
             this.menu.BackColor = System.Drawing.Color.Transparent;
@@ -100,6 +105,7 @@ namespace ProyectoTAP
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ControlBox = false;
+            this.Controls.Add(this.Version);
             this.Controls.Add(this.btnCreditos);
             this.Controls.Add(this.btnJugar);
             this.Controls.Add(this.AtrasPicture);
@@ -120,7 +126,6 @@ namespace ProyectoTAP
         }
 
         #endregion
-        private System.Windows.Forms.Timer Contador;
         private Menu menu;
         private Juego juego;
         private Creditos creditos;
@@ -128,6 +133,7 @@ namespace ProyectoTAP
         private System.Windows.Forms.PictureBox AtrasPicture;
         private System.Windows.Forms.Button btnJugar;
         private System.Windows.Forms.Button btnCreditos;
+        private System.Windows.Forms.Label Version;
     }
 }
 
