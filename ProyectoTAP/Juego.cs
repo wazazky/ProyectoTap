@@ -36,7 +36,8 @@ namespace ProyectoTAP
             FlechaTurno.Hide();
             disableLabel();
             disableCartas();
-            
+          
+
         }
         void disableLabel() {
            labelVictoria.Visible= false;
@@ -118,8 +119,6 @@ namespace ProyectoTAP
             P1CA.Enabled = false;
             P1CD.Enabled = false;
             P1CC.Enabled = false;
-
-
         }
 
         void revolver() {

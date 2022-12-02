@@ -58,9 +58,9 @@ public class Personaje
         if (index == "0") cura = 1;
         if (index == "1") cura = 4;
         if (index == "2") cura = 9;
-        personaje.vida = personaje.vida + cura * (personaje.Inteligencia); 
+        personaje.vida = personaje.vida + (cura * (personaje.Inteligencia)); 
         
-        if(personaje.vida >25+ (personaje.Inteligencia*2)) personaje.vida = 25+(personaje.Inteligencia*2);
+        if(personaje.vida >25+ (personaje.Inteligencia*2)) personaje.vida = 25+(personaje.Inteligencia*5);
     }
    
     public static void Defender(Personaje personaje,String index )

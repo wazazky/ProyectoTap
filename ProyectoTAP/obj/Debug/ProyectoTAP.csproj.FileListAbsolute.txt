@@ -52,3 +52,10 @@ E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug
 E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.ProjectWindow.zu.resources
 E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Juego.resources
 E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.Creditos.resources
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\bin\Debug\Interop.WMPLib.dll
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\bin\Debug\AxInterop.WMPLib.dll
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\Interop.WMPLib.dll
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\AxInterop.WMPLib.dll
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.csproj.ResolveComReference.cache
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\bin\Debug\NAudio.Core.dll
+E:\Workspace\Topicos Avanzados De programacion\ProyectoTap\ProyectoTAP\obj\Debug\ProyectoTAP.csproj.CopyComplete
