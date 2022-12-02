@@ -51,6 +51,18 @@ namespace ProyectoTAP
             this.labelvidaP2 = new System.Windows.Forms.Label();
             this.labelescudoP1 = new System.Windows.Forms.Label();
             this.labelescudoP2 = new System.Windows.Forms.Label();
+            this.labelAtributosP1 = new System.Windows.Forms.Label();
+            this.labelAtributosP2 = new System.Windows.Forms.Label();
+            this.btnRolFP1 = new System.Windows.Forms.Button();
+            this.ListaDeRol = new System.Windows.Forms.ImageList(this.components);
+            this.btnRolCP1 = new System.Windows.Forms.Button();
+            this.btnRolEP1 = new System.Windows.Forms.Button();
+            this.btnRolFP2 = new System.Windows.Forms.Button();
+            this.btnRolCP2 = new System.Windows.Forms.Button();
+            this.btnRolEP2 = new System.Windows.Forms.Button();
+            this.InfoC = new System.Windows.Forms.ToolTip(this.components);
+            this.InfoE = new System.Windows.Forms.ToolTip(this.components);
+            this.InfoF = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.FondoPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player1Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Player2Image)).BeginInit();
@@ -287,7 +299,7 @@ namespace ProyectoTAP
             this.labelvidaP2.BackColor = System.Drawing.Color.Transparent;
             this.labelvidaP2.Font = new System.Drawing.Font("Segoe UI Emoji", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelvidaP2.ForeColor = System.Drawing.Color.White;
-            this.labelvidaP2.Location = new System.Drawing.Point(1022, 351);
+            this.labelvidaP2.Location = new System.Drawing.Point(993, 351);
             this.labelvidaP2.Name = "labelvidaP2";
             this.labelvidaP2.Size = new System.Drawing.Size(78, 32);
             this.labelvidaP2.TabIndex = 13;
@@ -311,11 +323,126 @@ namespace ProyectoTAP
             this.labelescudoP2.BackColor = System.Drawing.Color.Transparent;
             this.labelescudoP2.Font = new System.Drawing.Font("Segoe UI Emoji", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelescudoP2.ForeColor = System.Drawing.Color.White;
-            this.labelescudoP2.Location = new System.Drawing.Point(1022, 395);
+            this.labelescudoP2.Location = new System.Drawing.Point(993, 395);
             this.labelescudoP2.Name = "labelescudoP2";
             this.labelescudoP2.Size = new System.Drawing.Size(78, 32);
             this.labelescudoP2.TabIndex = 15;
             this.labelescudoP2.Text = "label4";
+            // 
+            // labelAtributosP1
+            // 
+            this.labelAtributosP1.AutoSize = true;
+            this.labelAtributosP1.BackColor = System.Drawing.Color.Transparent;
+            this.labelAtributosP1.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAtributosP1.ForeColor = System.Drawing.Color.White;
+            this.labelAtributosP1.Location = new System.Drawing.Point(16, 150);
+            this.labelAtributosP1.Name = "labelAtributosP1";
+            this.labelAtributosP1.Size = new System.Drawing.Size(89, 26);
+            this.labelAtributosP1.TabIndex = 16;
+            this.labelAtributosP1.Text = "Atributos";
+            this.labelAtributosP1.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // labelAtributosP2
+            // 
+            this.labelAtributosP2.AutoSize = true;
+            this.labelAtributosP2.BackColor = System.Drawing.Color.Transparent;
+            this.labelAtributosP2.Font = new System.Drawing.Font("Segoe UI Emoji", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAtributosP2.ForeColor = System.Drawing.Color.White;
+            this.labelAtributosP2.Location = new System.Drawing.Point(1007, 150);
+            this.labelAtributosP2.Name = "labelAtributosP2";
+            this.labelAtributosP2.Size = new System.Drawing.Size(89, 26);
+            this.labelAtributosP2.TabIndex = 17;
+            this.labelAtributosP2.Text = "Atributos";
+            // 
+            // btnRolFP1
+            // 
+            this.btnRolFP1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRolFP1.ImageIndex = 0;
+            this.btnRolFP1.ImageList = this.ListaDeRol;
+            this.btnRolFP1.Location = new System.Drawing.Point(174, 528);
+            this.btnRolFP1.Margin = new System.Windows.Forms.Padding(0);
+            this.btnRolFP1.Name = "btnRolFP1";
+            this.btnRolFP1.Size = new System.Drawing.Size(40, 40);
+            this.btnRolFP1.TabIndex = 18;
+            this.btnRolFP1.UseVisualStyleBackColor = false;
+            this.btnRolFP1.Click += new System.EventHandler(this.btnRolFP1_Click);
+            // 
+            // ListaDeRol
+            // 
+            this.ListaDeRol.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ListaDeRol.ImageStream")));
+            this.ListaDeRol.TransparentColor = System.Drawing.Color.Transparent;
+            this.ListaDeRol.Images.SetKeyName(0, "Fuerza.png");
+            this.ListaDeRol.Images.SetKeyName(1, "Inteligencia.png");
+            this.ListaDeRol.Images.SetKeyName(2, "Resistencia.png");
+            // 
+            // btnRolCP1
+            // 
+            this.btnRolCP1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRolCP1.ImageIndex = 1;
+            this.btnRolCP1.ImageList = this.ListaDeRol;
+            this.btnRolCP1.Location = new System.Drawing.Point(174, 448);
+            this.btnRolCP1.Margin = new System.Windows.Forms.Padding(0);
+            this.btnRolCP1.Name = "btnRolCP1";
+            this.btnRolCP1.Size = new System.Drawing.Size(40, 40);
+            this.btnRolCP1.TabIndex = 19;
+            this.btnRolCP1.UseVisualStyleBackColor = false;
+            this.btnRolCP1.Click += new System.EventHandler(this.btnRolCP1_Click);
+            // 
+            // btnRolEP1
+            // 
+            this.btnRolEP1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRolEP1.ImageIndex = 2;
+            this.btnRolEP1.ImageList = this.ListaDeRol;
+            this.btnRolEP1.Location = new System.Drawing.Point(174, 488);
+            this.btnRolEP1.Margin = new System.Windows.Forms.Padding(0);
+            this.btnRolEP1.Name = "btnRolEP1";
+            this.btnRolEP1.Size = new System.Drawing.Size(40, 40);
+            this.btnRolEP1.TabIndex = 20;
+            this.btnRolEP1.UseVisualStyleBackColor = false;
+            this.btnRolEP1.Click += new System.EventHandler(this.btnRolEP1_Click);
+            // 
+            // btnRolFP2
+            // 
+            this.btnRolFP2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRolFP2.ImageIndex = 0;
+            this.btnRolFP2.ImageList = this.ListaDeRol;
+            this.btnRolFP2.Location = new System.Drawing.Point(1011, 528);
+            this.btnRolFP2.Margin = new System.Windows.Forms.Padding(0);
+            this.btnRolFP2.Name = "btnRolFP2";
+            this.btnRolFP2.Size = new System.Drawing.Size(40, 40);
+            this.btnRolFP2.TabIndex = 23;
+            this.btnRolFP2.UseVisualStyleBackColor = false;
+            this.btnRolFP2.Click += new System.EventHandler(this.btnRolFP2_Click);
+            // 
+            // btnRolCP2
+            // 
+            this.btnRolCP2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRolCP2.ImageIndex = 1;
+            this.btnRolCP2.ImageList = this.ListaDeRol;
+            this.btnRolCP2.Location = new System.Drawing.Point(1011, 448);
+            this.btnRolCP2.Margin = new System.Windows.Forms.Padding(0);
+            this.btnRolCP2.Name = "btnRolCP2";
+            this.btnRolCP2.Size = new System.Drawing.Size(40, 40);
+            this.btnRolCP2.TabIndex = 22;
+            this.btnRolCP2.UseVisualStyleBackColor = false;
+            this.btnRolCP2.Click += new System.EventHandler(this.btnRolCP2_Click);
+            // 
+            // btnRolEP2
+            // 
+            this.btnRolEP2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRolEP2.ImageIndex = 2;
+            this.btnRolEP2.ImageList = this.ListaDeRol;
+            this.btnRolEP2.Location = new System.Drawing.Point(1012, 488);
+            this.btnRolEP2.Margin = new System.Windows.Forms.Padding(0);
+            this.btnRolEP2.Name = "btnRolEP2";
+            this.btnRolEP2.Size = new System.Drawing.Size(40, 40);
+            this.btnRolEP2.TabIndex = 21;
+            this.btnRolEP2.UseVisualStyleBackColor = false;
+            this.btnRolEP2.Click += new System.EventHandler(this.btnRolEP2_Click);
+            // 
+            // InfoC
+            // 
+        
             // 
             // Juego
             // 
@@ -323,6 +450,14 @@ namespace ProyectoTAP
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Controls.Add(this.btnRolFP2);
+            this.Controls.Add(this.btnRolCP2);
+            this.Controls.Add(this.btnRolEP2);
+            this.Controls.Add(this.btnRolEP1);
+            this.Controls.Add(this.btnRolCP1);
+            this.Controls.Add(this.btnRolFP1);
+            this.Controls.Add(this.labelAtributosP2);
+            this.Controls.Add(this.labelAtributosP1);
             this.Controls.Add(this.labelescudoP2);
             this.Controls.Add(this.labelescudoP1);
             this.Controls.Add(this.labelvidaP2);
@@ -372,5 +507,17 @@ namespace ProyectoTAP
         private Label labelvidaP2;
         private Label labelescudoP1;
         private Label labelescudoP2;
+        private Label labelAtributosP1;
+        private Label labelAtributosP2;
+        private Button btnRolFP1;
+        private ImageList ListaDeRol;
+        private Button btnRolCP1;
+        private Button btnRolEP1;
+        private Button btnRolFP2;
+        private Button btnRolCP2;
+        private Button btnRolEP2;
+        private ToolTip InfoC;
+        private ToolTip InfoE;
+        private ToolTip InfoF;
     }
 }

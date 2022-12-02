@@ -12,7 +12,7 @@ namespace ProyectoTAP
    
     internal class Wcore
     {
-        string dir;
+        
         public static SoundPlayer playSimpleSound(string direccion)
         {
            

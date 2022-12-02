@@ -6,59 +6,31 @@ using System.Windows.Forms;
 
 public class Personaje
 {
-    int id;//identificador de personaje, usar el id 1 para el pricipal el 0 para el specatdor y los demas para los eneemigos 
-    int Fuerza;//modificador para el daño y el calculo d vida total 
-    int Persepcion;//modificador de punteria 
-    int Resistencia;//Modificador para la vida
-    int Inteligencia;//el modificador de aumenta la curacion y el escudo 
-    int Agilidad;//modificador para bajar la punteria al enemigo
-    int Suerte;//pasan cosas 
-    float vida;//la vida se calcula en (resistencia*5) * (fuerza*5)
-    float escudo;//el escudo se consigue despues y su multipliador es la inteligencia 
+    public int id;//identificador de personaje, usar el id 1 para el pricipal el 0 para el specatdor y los demas para los eneemigos 
+    public int Fuerza;//modificador para el daño 
+    public int Resistencia;//Modificador para la vida
+    public  int Inteligencia;//el modificador de aumenta la curacion y el escudo 
+    public int Suerte;//pasan cosas 
+    public float vida;//la vida se calcula en (resistencia*5) * (fuerza*5)
+    public float escudo;//el escudo se consigue despues y su multipliador es la inteligencia 
 
-    public global::System.Int32 Id { get => id; set => id = value; }
-    public global::System.Int32 Fuerza1 { get => Fuerza; set => Fuerza = value; }
-    public global::System.Int32 Persepcion1 { get => Persepcion; set => Persepcion = value; }
-    public global::System.Int32 Resistencia1 { get => Resistencia; set => Resistencia = value; }
-    
-    public global::System.Int32 Inteligencia1 { get => Inteligencia; set => Inteligencia = value; }
-    public global::System.Int32 Suerte1 { get => Suerte; set => Suerte = value; }
-    public float Vida { get => vida; set => vida = value; }
-    public float Escudo { get => escudo; set => escudo = value; }
-    public int Agilidad1 { get => Agilidad2; set => Agilidad2 = value; }
-    public int Agilidad2 { get => Agilidad; set => Agilidad = value; }
+   public float Vida { get => vida; set => vida = value; }
+   public float Escudo { get => escudo; set => escudo = value; }
 
-    public Personaje(int id, int Fuerza, int Persepcion, int Resistencia, int Inteligencia,int Agilidad, int Suerte)
+    public Personaje(int id, int Fuerza, int Resistencia, int Inteligencia, int Suerte)
     {
         this.id = id;
         this.Fuerza = Fuerza;
-        this.Persepcion = Persepcion;
-        this.Resistencia = Resistencia;
        
+        this.Resistencia = Resistencia;
         this.Inteligencia = Inteligencia;
-        this.Agilidad = Agilidad;
+       
         this.Suerte = Suerte;
-        this.vida = 50+(Resistencia * 2) + (Fuerza * 2);//el maximo valor base es 50
+        this.vida = 25 + (Inteligencia * 5);//el maximo valor base es 50
         this.escudo = 0;//el maximo valor base es 20
     }
-    public Personaje(int id)
-    {
-        Random rnd = new Random();
-
-        this.id = id;
-        this.Fuerza = rnd.Next(10);
-        this.Persepcion = rnd.Next(10);
-        this.Resistencia = rnd.Next(10);
-        this.Inteligencia = rnd.Next(10);
-        this.Suerte = rnd.Next(10);
-        this.Agilidad2 = rnd.Next(10);
-        this.vida =50+ (Resistencia * 2) + (Fuerza * 2);
-        this.escudo = 0;
-    }
-    public Personaje()//este consturctor es para el Espectador
-    { 
-
-    }
+    
+   
 
 
     public static void Ataque(Personaje Atacante, Personaje Defensor, string index)
@@ -74,13 +46,12 @@ public class Personaje
             Defensor.escudo = Defensor.escudo - daño;
             if (Defensor.escudo < 0)
             {
-                Defensor.vida = Defensor.vida - Defensor.escudo;
+                Defensor.vida = Defensor.vida + Defensor.escudo;
             }
         }
         else {
             Defensor.Vida = Defensor.Vida - daño;
         }
-
     }
     public static void Curar(Personaje personaje, String index) {
         int cura = 0;
@@ -89,7 +60,7 @@ public class Personaje
         if (index == "2") cura = 9;
         personaje.vida = personaje.vida + cura * (personaje.Inteligencia); 
         
-        if(personaje.vida >50+ (personaje.Resistencia*2)+(personaje.Fuerza*2)) personaje.vida = 50+(personaje.Resistencia*2)+(personaje.Fuerza*2);
+        if(personaje.vida >25+ (personaje.Inteligencia*2)) personaje.vida = 25+(personaje.Inteligencia*2);
     }
    
     public static void Defender(Personaje personaje,String index )
@@ -99,7 +70,7 @@ public class Personaje
         if (index == "1") escudo = 4;
         if (index == "2") escudo = 9;
         
-        personaje.escudo = personaje.escudo + (escudo*(personaje.Inteligencia));
+        personaje.escudo = personaje.escudo + (escudo*(personaje.Resistencia));
         if (personaje.escudo > 30) personaje.escudo= 30 ;
 
     }
